@@ -33,22 +33,21 @@ int fibonacciSequence (int n){ //Function to Fibonacci//
 int main (){
 
 	int k, sequence;
-  char term[256];
+	char term[256];
 
 	printf("Type how many terms you want:");
-  fgets(term, 256, stdin);
+	fgets(term, 256, stdin);
+	while (atoi(term) == 0) {
+	
+	printf("Are you stupid?\nType again how many terms you want:");
+	fgets(term, 256, stdin);
+	}
+	
 
-  if (atoi(term) == 0) {
-    printf("are you stupid?");
-    return 0;
-  } else {
+	// converts string to integer
+	k = atoi(term);
 
-    // converts string to integer
-    k = atoi(term);
-
-    sequence = fibonacciSequence (k);
-    printf ("The %dth term from Fibonacci's Sequence is:%d\n",k, sequence);
-  }
-
-  return 0;
+	sequence = fibonacciSequence (k);
+	printf ("The %dth term from Fibonacci's Sequence is:%d\n",k, sequence);
+	
 }
