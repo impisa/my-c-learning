@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <math.h>
 
-int fibonacciSequence (int n){
+int fibonacciSequence (int n){ //Function to Fibonacci//
 	int lastTerm, penultTerm, currentTerm, i;
-	if (n <=1){
+	if (n <=1){ //Eliminating some kind of terms witch we know answer//
 	printf("The term for this integer is 0\n");
 	}
 	if (n<=2){
@@ -17,7 +17,7 @@ int fibonacciSequence (int n){
 	currentTerm = 2;
 	for(i=0 ; i<=n-2; i=i++){
 	printf("The actual term from Fibonacci's Sequence to integer :%d\n", currentTerm);
-	penultTerm = lastTerm;
+	penultTerm = lastTerm; 
 	lastTerm = currentTerm;
 	currentTerm = lastTerm + penultTerm;
 	}
