@@ -36,7 +36,7 @@ float main (){
 	printf("Type the x coordinate to first point:\n");
 	fgets(particle.x1axis,256,stdin);
 	conditionWhile(particle.x1axis, a1);
-	printf("%f",particle.x1axis);
+	printf("%f",a1);
 
 	printf("Type the y coordinate to first point:\n");
 	fgets(particle.y1axis,256,stdin);
